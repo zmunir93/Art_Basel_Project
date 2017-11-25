@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 #   "https://github.com/#{repo_name}.git"
 # end
 
+gem 'json'
+
 gem 'nokogiri'
 
 gem 'httparty'
