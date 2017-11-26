@@ -10,6 +10,10 @@ class ArtBaselController < ApplicationController
 	    attr_reader :image
   end
 
+	def home
+
+	end
+
   def index
 	    require 'open-uri'
 	    doc = Nokogiri::HTML(open("https://www.eventbrite.com/d/fl--miami/art-basel/?crt=regular&sort=date"))

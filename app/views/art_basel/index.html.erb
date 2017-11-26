@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Art Basel Events</title>
-</head>
-<body>
-
-
-
-
 <h1>Events</h1>
 
 <% @entriesArray.each do |entry| %>
@@ -15,14 +5,7 @@
   	<div class="image"><img src="<%= entry.image %>"></div>
   	<div class="title"><%= entry.title %></div>
   	<div class="date"><%= entry.link %></div>
-  	
+
   </div>
 
 <% end %>
-
-
-
-
-
-</body>
-</html>

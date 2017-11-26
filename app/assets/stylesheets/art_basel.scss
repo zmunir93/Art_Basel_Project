@@ -1,3 +1,90 @@
 // Place all the styles related to the ArtBasel controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.art_basel{
+  background: url(/images/background.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
+.container1_banner{
+  display:flex;
+  border: 1px;
+  padding: 10px;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+.box_banner{
+  border: 1px;
+  flex:1;
+}
+
+
+.container2_navbar{
+    flex:1;
+    border:1px;
+    height: 50px;
+}
+
+
+.container3_info{
+  display:flex;
+  border: 1px;
+  padding: 10px;
+}
+
+.box_info{
+  border: 1px;
+  flex:1;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: 'Lora', serif;
+}
+
+.box_address{
+  border: 1px;
+  flex:1;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: 'Lora', serif;
+}
+
+
+.container4_additional_info{
+  display:flex;
+  border: 1px;
+  padding: 10px;
+}
+
+.box_map{
+  border: 1px;
+  flex:1;
+  background:url(/images/miami_map_holder.jpg);
+}
+
+.box_art_basel_logo{
+  border: 1px;
+  flex:1;
+}
+
+.box_party_pic{
+  border: 1px;
+  flex:1;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+
+.container5_art_pictures{
+  display:flex;
+  border: 1px;
+  padding: 10px;
+}
+
+
+.footer_content{
+  display:flex;
+  border: 1px;
+  padding: 10px;
+  background: black;
+}
