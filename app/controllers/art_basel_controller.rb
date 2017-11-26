@@ -1,13 +1,13 @@
 class ArtBaselController < ApplicationController
 	class Entry
-	    def initialize(title, link, image, venue)
+	    def initialize(date, title, image, venue)
+	      @date = date
 	      @title = title
-	      @link = link
 	      @image = image
 	      @venue = venue
 	    end
+	    attr_reader :date
 	    attr_reader :title
-	    attr_reader :link
 	    attr_reader :image
 	    attr_reader :venue
   end
@@ -19,11 +19,11 @@ class ArtBaselController < ApplicationController
 	    entries = doc.css('.search-date-group .list-card-v2')
 	    @entriesArray = []
 	    entries.each do |entry|
-	      title = entry.css('.list-card__date').text
-	      link = entry.css('.list-card__title').text
+	      date = entry.css('.list-card__date').text
+	      title = entry.css('.list-card__title').text
 	      image = entry.css('.js-poster-image')[0].attr('src')
 	      venue = entry.css('.list-card__venue').text
-	      @entriesArray << Entry.new(title, link, image, venue)
+	      @entriesArray << Entry.new(date, title, image, venue)
 	    end
 
 	  render 'index'

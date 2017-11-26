@@ -8,15 +8,18 @@
 
 
 
-<h1>Events</h1>
+<h1 id="head">Events</h1>
 
 <% @entriesArray.each do |entry| %>
   <div class="event">
-  	<div class="image"><img src="<%= entry.image %>"></div>
-  	<div class="title"><%= entry.title %></div>
-  	<div class="venue"><%= entry.venue %></div>
-  	<div class="date"><%= entry.link %></div>
-  	
+  	<!-- <div class="event-wrapper"> -->
+	  	<div class="image"><img src="<%= entry.image %>"></div>
+	  		<div class="text-wrapper">
+			  	<h3 class="title"><%= entry.title %></h3>
+			  	<h5 class="date"><%= entry.date %></h5>
+			  	<div class="venue"><%= entry.venue %></div>
+		  	</div>
+  	<!-- </div> -->
   </div>
 
 <% end %>
