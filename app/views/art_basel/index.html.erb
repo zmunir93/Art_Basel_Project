@@ -8,9 +8,21 @@
 
 
 
-
 <h1>Events</h1>
-<%= @info %>
+
+<% @entriesArray.each do |entry| %>
+  <div class="event">
+  	<div class="image"><img src="<%= entry.image %>"></div>
+  	<div class="title"><%= entry.title %></div>
+  	<div class="date"><%= entry.link %></div>
+  	
+  </div>
+
+<% end %>
+
+
+
+
 
 </body>
 </html>
