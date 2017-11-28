@@ -87,3 +87,56 @@
   padding: 10px;
   background: black;
 }
+
+
+
+
+
+######################## index.html.erb css #######################
+
+
+#head {
+  text-align: center;
+}
+
+.event {
+  margin: 25px auto;
+  width: 700px;
+  height: 185px;
+  /*text-align: center;*/
+  padding: 40px 5px;
+  border: 1px #D2D6DF;
+  box-shadow: 3px 4px 19px #888888;
+  border-radius: 6px;
+}
+
+.image {
+  /*width: 400px;
+  height: 150px;*/
+  border: 1px green solid;
+
+}
+
+.image img {
+  /*text-align: center;*/
+  max-width: 280px;
+  float: left;
+}
+
+.title {
+  padding: 0 20px;
+  /*float: right;*/
+}
+
+/*.event-wrapper {
+  width: auto;
+  padding: 20px 0;
+  height: 200px;
+  border: 1px red solid;
+}
+*/
+.text-wrapper {
+  text-align: center;
+  padding-left: 5px;
+  border: 1px blue solid;
+}
