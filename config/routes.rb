@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   get '/events' => 'art_basel#index'
 
   root "art_basel#home"
