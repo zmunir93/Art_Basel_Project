@@ -1,0 +1,30 @@
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div id="links">
+  <% (1..10).each do |i| %>
+    <a href="/images/<%= i %> r.jpg" title="Art" >
+        <img src="/images/<%= i %> t.jpg" alt="Art">
+    </a>
+  <% end %>
+</div>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+<%= javascript_include_tag 'blueimp-gallery' %>
+<%= stylesheet_link_tag 'blueimp-gallery' %>
