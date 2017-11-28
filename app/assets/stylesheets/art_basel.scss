@@ -104,6 +104,7 @@
 
 
 #head {
+  padding: 183px;
   text-align: center;
 }
 
@@ -147,4 +148,11 @@
   text-align: center;
   padding-left: 5px;
   border: 1px blue solid;
+}
+
+button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  /*background: blue;*/
 }
