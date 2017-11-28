@@ -30,63 +30,27 @@
   </nav>
 </div>
 
-<div class="wrap_for_background">
-<div class="container3_info">
-  <div class="box_info">
-    <div>
-      <p><h3>Find local South Florida art events.</h3></p>
-      <p><h3>This months local event features: Miami art week.</h3></p>
-      <p><h3>Expierence Miami culture and live the art.</h3></p>
-      </p>
-    </div>
-  </div>
+<p id="notice"><%= notice %></p>
 
-  <div class="box_address">
-    <p><h2>Miami Beach Convention Center</h2></p>
-    <p><h2>31901 Convention Center Drive</h2></p>
-    <p><h2>Miami Beach, FL 33139</h2></p>
-  </div>
-</div>
+<h1>See What Our Users Are Saying!</h1>
 
-<div class="container4_additional_info">
-  <div class="box_map">
-    <%= image_tag ("/images/miami_map_holder.jpg") %>
-  </div>
+<%= link_to 'Write a Review', new_review_path, class: "test" %>
 
-  <div class="box_party_pic">
-    <div class="party_pic">
-        <%= image_tag ("/images/party.jpg") %>
-        <div class="top centered"><h3>Join the fun!<h3>
-        </div>
-    </div>
-  </div>
+<table id="reviewtable">
+  <thead>
+    <tr>
+      <!-- <th>Past Reviews</th> -->
+      <!-- <th colspan="10"></th> -->
+    </tr>
+  </thead>
 
-    <div class="box_art_basel_logo">
-      <div>
-          <%= image_tag ("/images/artbasel.png") %>
-      </div>
-    </div>
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.comment %><br> Added on: <%= time_ago_in_words review.created_at %> ago</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-</div>
-
-
-
-<div class="container5_art_pictures" style="background-color:SkyBlue">
-<div class="art_pics" >
-    <div class="images">
-      <ul>
-        <%= image_tag ("/images/pic1.jpg") %>
-        <%= image_tag ("/images/pic2.jpg") %>
-        <%= image_tag ("/images/pic3.jpg") %>
-        <%= image_tag ("/images/pic4.jpg") %>
-      </ul>
-  </div>
-</div>
-</div>
-</div>
-
-
-<footer>
-  <div class="footer_content">
-  <font color="white" class="credit">&copy; Copyright 2017</font>
-</footer>
+<br>

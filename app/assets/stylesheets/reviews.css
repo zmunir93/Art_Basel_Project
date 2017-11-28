@@ -1,0 +1,31 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.test {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px
+}
+
+#reviewtable {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.actions {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
