@@ -1,15 +1,17 @@
 class ArtBaselController < ApplicationController
   class Entry
-    def initialize(date, title, image, venue)
+    def initialize(date, title, image, venue, link)
       @date = date
       @title = title
       @image = image
       @venue = venue
+      @link = link
     end
     attr_reader :date
     attr_reader :title
     attr_reader :image
     attr_reader :venue
+    attr_reader :link
   end
 
   def home; end
@@ -27,7 +29,8 @@ class ArtBaselController < ApplicationController
       title = entry.css('.list-card__title').text
       image = entry.css('.js-poster-image')[0].attr('src')
       venue = entry.css('.list-card__venue').text
-      @entriesArray << Entry.new(date, title, image, venue)
+      link = entry.css('a')[0]['href']
+      @entriesArray << Entry.new(date, title, image, venue, link)
     end
 
     render 'index'
