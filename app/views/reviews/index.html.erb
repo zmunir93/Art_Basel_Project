@@ -35,21 +35,15 @@
   <% end %>
 </div>
 
-<table id="reviewtable">
-  <thead>
-    <tr>
-      <!-- <th>Past Reviews</th> -->
-      <!-- <th colspan="10"></th> -->
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @reviews.each do |review| %>
-      <tr>
-        <td><%= review.comment %><br> Added on: <%= time_ago_in_words review.created_at %> ago</td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+          <% @reviews.each do |review| %>
+            <br> <%= review.comment %>
+            <br class= "review_time"> Added on: <%= time_ago_in_words review.created_at %> ago
+            <br>
+          <% end %>
+    </li>
+  </ul>
+</div>
 <br>

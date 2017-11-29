@@ -4,31 +4,49 @@
 */
 h1 {
   display: flex;
+  margin-top: 100px;
   justify-content: center;
 }
 
 #review_button {
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px
+  margin-top: 50px;
+  padding-right: 50px;
 }
 
 #reviewtable {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
   padding-right: 100px;
-  
+  width: 1200px;
 }
 
 .field {
   padding-top: 30px;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .actions {
   padding-top: 15px;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card {
+  flex-wrap: wrap;
+  border: solid #9a43ae 3px;
+  border-radius: 10px;
+  /*height: 165px;*/
+  margin-left: 100px;
+  width: 1200px;
+}
+
+.review_time {
+  align-items: flex-end;
 }
