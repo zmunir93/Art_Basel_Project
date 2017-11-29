@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .art_basel{
   margin: 0;
   padding: 0;
@@ -33,6 +34,7 @@
 
 
 .container3_info{
+  background-color: #46B1C9;
   display:flex;
   border: 1px;
   padding: 10px;
@@ -62,12 +64,16 @@
   padding: 10px;
 }
 
+.box_map a img {
+  width: 404px;
+}
+
 .box_map{
   border: 1px;
   flex:1;
   padding-top: 16px;
   padding-right: 30px;
-  padding-left: 10px;
+  padding-left: 80px;
 }
 
 .box_art_basel_logo{
