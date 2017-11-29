@@ -15,7 +15,10 @@ h1 {
 
 #reviewtable {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 100px;
+  padding-right: 100px;
+  
 }
 
 .field {
