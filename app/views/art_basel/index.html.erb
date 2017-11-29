@@ -1,31 +1,37 @@
+<div class="banner-container" style="background-color:SkyBlue">
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Art Basel Events</title>
-</head>
-<body>
+	<div class="logos">
+		<%= image_tag ("/images/logo.png") %>
+	</div>
+	<!-- <div class="event-now-logo"> -->
+	<!-- </div> -->
 
+</div>
 
-
+<div class="home-link">
+<a href="localhost:3000">Home</a>
+</div>
 
 <h1 id="head">Events</h1>
 
 <% @entriesArray.each do |entry| %>
   <div class="event">
   	<!-- <div class="event-wrapper"> -->
-	  	<div class="image"><img src="<%= entry.image %>"></div>
-	  		<div class="text-wrapper">
-			  	<h3 class="title"><%= entry.title %></h3>
-			  	<h5 class="date"><%= entry.date %></h5>
-			  	<div class="venue"><%= entry.venue %></div>
-		  	</div>
+		<a href="<%= entry.link %>">
+		  	<div class="image"><img src="<%= entry.image %>"></div>
+		  		<div class="text-wrapper">
+				  	<h3 class="title"><%= entry.title %></h3>
+				  	<h5 class="date"><%= entry.date %></h5>
+				  	<div class="venue"><%= entry.venue %></div>
+				  		
+			  	</div>
   	<!-- </div> -->
+		</a>
   </div>
 
 
 <% end %>
 
-<footer>
-	<button><a href="http://localhost:3000/">Home</a></button>
-</footer>
+
+
+<%= stylesheet_link_tag    'customs' %>
