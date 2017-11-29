@@ -4,7 +4,8 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
-    @reviews = Review.all
+    # @reviews = Review.all
+    @reviews = Review.all.sort_by {|m| m.created_at }.reverse
   end
 
   # GET /reviews/1
