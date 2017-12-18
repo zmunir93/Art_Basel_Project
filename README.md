@@ -1,24 +1,5 @@
-# README
+<h1>EventNow </h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h2>Friends and Family Project</h2>
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<p>EventNow is your online all-in-one for the latest upcoming local events.</p>
