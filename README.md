@@ -1,6 +1,6 @@
 # Eventnow
 
-Simple first rails app. Collaborated with 3 other team members to build this out over a weekend. The app is mainly focused around the Art Basel event and allows the user to have a view all the events for the week, view the artwork, and leave a comment. Main focus was to understand MVC, and different ways to implement small features with rails.
+Simple first rails app. Collaborated with 3 other team members to build this out over a weekend. The app is mainly focused around the Art Basel event and allows the user to view all the events for the week, view the artwork, and leave a comment. Main focus was to understand MVC, and different ways to implement small features with rails.
 
 ## Getting Started
 
